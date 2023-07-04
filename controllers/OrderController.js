@@ -73,7 +73,7 @@ export const orderFood = async (req, res) => {
             order_name: food.food_name,
             order_description: food.food_description,
             order_price:
-              food.is_free === true ? 0 : food.food_price * food.food_quantity,
+              food.is_free === true ? 0 : food.food_price * order_quantity,
             order_image: food.food_image,
             order_category: food.food_category,
             order_quantity,
